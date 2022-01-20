@@ -46,9 +46,9 @@ function Layout({ children }) {
         display: 'flex'
       }}>
       <AppBar
-        color='secondary'
         position='fixed'
         elevation={0}
+        color='secondary'
         sx={{
           width: `calc(100% - ${drawerWidth}px) !important`
         }}>
@@ -56,7 +56,7 @@ function Layout({ children }) {
           sx={{
             justifyContent: 'end'
           }}>
-          <Typography>Name</Typography>
+          <Typography color='secondary'>Name</Typography>
           <Avatar
             sx={{
               marginLeft: (theme) => theme.spacing(2)
@@ -64,7 +64,6 @@ function Layout({ children }) {
           />
         </Toolbar>
       </AppBar>
-
       <Drawer sx={{ width: drawerWidth }} variant='permanent' anchor='left'>
         <Box>
           <Typography
@@ -88,7 +87,6 @@ function Layout({ children }) {
           ))}
         </List>
       </Drawer>
-
       <Box sx={{ width: 100, padding: (theme) => theme.spacing(3) }}>
         <Box sx={{ postion: 'sticky' }}></Box>
         {children}

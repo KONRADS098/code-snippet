@@ -1,26 +1,28 @@
-import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 // A custom theme for this app
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    background: {
+      default: '#25274D'
+    },
     primary: {
-      main: red.A400
+      main: '#F78888'
     },
     secondary: {
-      main: red.A400
+      main: '#F3D250'
     },
     error: {
       main: red.A400
     }
   },
   typography: {
-    fontFamily: "Quicksand",
+    fontFamily: 'Quicksand',
     fontWeightLight: 400,
     fontWeightRegular: 500,
-    fontWeight: 600,
-    fontWeightLightMedium: 700
+    fontWeightMedium: 700,
+    fontWeightBold: 1000
   }
 });
 
